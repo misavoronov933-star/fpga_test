@@ -57,33 +57,33 @@ localparam IDLE = 0, CALC_AW = 1,  SEND_AW = 2, SEND_W = 3, WAIT_B = 4, UPDATE_A
 localparam logic [28:0] BUFFER_SIZE = 29'h1000_0000;
 localparam logic [12:0] axi_4k_bound = 13'h1000;
 
-    logic [7:0] pattern_data_buff;
-    logic [15:0] pattern_size_buff;
-    logic [2:0] state;
-    logic busy;
-    logic [15:0] number_of_bytes;
-    logic [27:0] current_addr;
-    logic [7:0] current_burst_size;
-    logic [6:0] transf_byte_cnt;
-    logic [1:0] m_axi_bid_buff;
-    logic [1:0] m_axi_bresp_buff;
-    logic [12:0] axi_boundary;
-    logic [28:0] ram_limit;
-    logic min_update;
+    (*KEEP = "TRUE"*)logic [7:0] pattern_data_buff;
+    (*KEEP = "TRUE"*)logic [15:0] pattern_size_buff;
+    (*KEEP = "TRUE"*)logic [2:0] state;
+    (*KEEP = "TRUE"*)logic busy;
+    (*KEEP = "TRUE"*)logic [15:0] number_of_bytes;
+    (*KEEP = "TRUE"*)logic [27:0] current_addr;
+    (*KEEP = "TRUE"*)logic [7:0] current_burst_size;
+    (*KEEP = "TRUE"*)logic [6:0] transf_byte_cnt;
+    (*KEEP = "TRUE"*)logic [1:0] m_axi_bid_buff;
+    (*KEEP = "TRUE"*)logic [1:0] m_axi_bresp_buff;
+    (*KEEP = "TRUE"*)logic [12:0] axi_boundary;
+    (*KEEP = "TRUE"*)logic [28:0] ram_limit;
+    (*KEEP = "TRUE"*)logic min_update;
     logic [7:0] comp_bound;
     logic [7:0] comp_ram;
     logic [7:0] comp_numb_of_bytes;
     logic [7:0] comp_a;
     logic [7:0] comp_b;
-//    assign busy = state != IDLE;  // Второй вариант реализации busy сигнала (удали если не нужен будет)
+    assign busy = state != IDLE;  // Второй вариант реализации busy сигнала (удали если не нужен будет)
     
-    assign m_axi_wlast = transf_byte_cnt != current_burst_size - 1;
+    assign m_axi_wlast = transf_byte_cnt == current_burst_size - 1;
     assign min_update = state == CALC_AW;
     
     assign comp_bound = (|axi_boundary[12:7]) ? 8'd128 : {1'b0, axi_boundary[6:0]};
-    assign comp_ram = (!ram_limit[28:7]) ? 8'd128 : {1'b0, ram_limit[6:0]};
+    assign comp_ram = (|ram_limit[28:7]) ? 8'd128 : {1'b0, ram_limit[6:0]};
     
-    assign comp_numb_of_bytes = (!number_of_bytes[15:7]) ? 8'd128 : {1'b0, number_of_bytes[6:0]};
+    assign comp_numb_of_bytes = (|number_of_bytes[15:7]) ? 8'd128 : {1'b0, number_of_bytes[6:0]};
     
     assign comp_a = (comp_bound <= comp_ram) ? comp_bound : comp_ram;
     assign comp_b = (comp_a <= comp_numb_of_bytes) ? comp_a : comp_numb_of_bytes;
@@ -106,33 +106,42 @@ localparam logic [12:0] axi_4k_bound = 13'h1000;
             state <= 0; 
             pattern_data_buff <= 0;
             pattern_size_buff <= 0;
-            busy <= 1'b0;
+//            busy <= 1'b0;
             current_addr <= 0;
             number_of_bytes <= 0;
             current_burst_size <= 0;
             transf_byte_cnt <= 0;
             axi_boundary <= axi_4k_bound;
             ram_limit <= BUFFER_SIZE;
+            m_axi_awaddr <= 0;
+            m_axi_awid <= 0;
+            m_axi_awburst <= 0;
+            m_axi_awlen <= 0;
+            m_axi_awsize <= 0;
+            m_axi_awvalid <= 1'b0;
+            m_axi_wdata <= 0;
+            m_axi_wvalid <= 1'b0;
+            m_axi_bready <= 1'b0;
         end
         else begin
             case(state)
             IDLE: begin
                 if (pattern_write && !busy) begin
                     if (pattern_size == 0)  begin
-                        busy <= 1'b0;
+//                        busy <= 1'b0;
                         state <= 0;
                     end
                     else begin
                         pattern_data_buff <= pattern_data;
                         number_of_bytes <= pattern_size; 
-                        busy <= 1'b1; 
-                        state <= CALC_AW;
+//                        busy <= 1'b1; 
+                        state <= 1;
                     end
                 end
             end
             CALC_AW: begin
                 current_burst_size <= comp_b;
-                state <= SEND_AW;
+                state <= 2;
             end
             SEND_AW: begin
                 m_axi_awaddr <= {4'd0,current_addr};
@@ -144,7 +153,7 @@ localparam logic [12:0] axi_4k_bound = 13'h1000;
                 
                 if (m_axi_awvalid && m_axi_awready) begin
                     m_axi_awvalid <= 1'b0;
-                    state <= SEND_W;
+                    state <= 3;
                 end
                 
             end
@@ -153,11 +162,11 @@ localparam logic [12:0] axi_4k_bound = 13'h1000;
                 m_axi_wvalid <= 1'b1;
                     if (m_axi_wvalid && m_axi_wready) begin
                         if (transf_byte_cnt != current_burst_size - 1) begin
-                            current_burst_size <= current_burst_size + 1'b1;
+                            transf_byte_cnt <= transf_byte_cnt + 1'b1;
                         end
                         else begin
                             transf_byte_cnt <= 0;
-                            state <= WAIT_B;
+                            state <= 4;
                             m_axi_wvalid <= 1'b0;
                         end
                     end
@@ -170,7 +179,7 @@ localparam logic [12:0] axi_4k_bound = 13'h1000;
                     m_axi_bready <= 1'b0;
                     m_axi_bid_buff <= m_axi_bid;
                     m_axi_bresp_buff <= m_axi_bresp;
-                    state <= UPDATE_AW;
+                    state <= 5;
                 end
             end
             UPDATE_AW: begin
@@ -182,16 +191,20 @@ localparam logic [12:0] axi_4k_bound = 13'h1000;
             end
             CHECK: begin
                 if (number_of_bytes == 0) begin
-                    state <= IDLE;
+                    state <= 0;
                 end
                 else begin
-                    state <= CALC_AW;
+                    state <= 1;
                 end
             end
-            
+            default: begin
+                state <= 0;
+            end
             endcase 
         end
     end
+    
 
+    
 
 endmodule
