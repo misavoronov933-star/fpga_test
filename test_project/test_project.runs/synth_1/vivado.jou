@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sun Jun 21 02:10:54 2026
-# Process ID         : 26332
+# Start of session at: Sun Jun 21 18:52:30 2026
+# Process ID         : 28444
 # Current directory  : C:/Users/Kostya/Desktop/fpga_test/fpga_test/test_project/test_project.runs/synth_1
 # Command line       : vivado.exe -log axi_writer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_writer.tcl
 # Log file           : C:/Users/Kostya/Desktop/fpga_test/fpga_test/test_project/test_project.runs/synth_1/axi_writer.vds
@@ -19,6 +19,6 @@
 # Host memory        : 68542 MB
 # Swap memory        : 4294 MB
 # Total Virtual      : 72836 MB
-# Available Virtual  : 39697 MB
+# Available Virtual  : 42442 MB
 #-----------------------------------------------------------
 source axi_writer.tcl -notrace

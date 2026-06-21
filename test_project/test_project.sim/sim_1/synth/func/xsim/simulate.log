@@ -1,1 +1,13 @@
 Time resolution is 1 ps
+Random test 0: data=69 size=52145
+Random test 1: data=55 size=35131
+Random test 2: data=2d size=2981
+Random test 3: data=2c size=30458
+Random test 4: data=4b size=41255
+Random test 5: data=1b size=48212
+Random test 6: data=26 size=57503
+Random test 7: data=d7 size=55738
+Random test 8: data=81 size=12512
+Random test 9: data=53 size=61879
+Random tests finished
+$finish called at time : 4228075 ns : File "C:/Users/Kostya/Desktop/fpga_test/fpga_test/test_project/test_project.srcs/sim_1/new/tb_axi_writer.sv" Line 122

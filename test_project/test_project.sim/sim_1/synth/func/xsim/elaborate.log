@@ -5,6 +5,6 @@ Running: C:/Xilinx/Vivado/2024.2/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe -
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-2861] module 'axi_writer' does not have a parameter named AXI_MAX_BURST_SIZE [C:/Users/Kostya/Desktop/fpga_test/fpga_test/test_project/test_project.srcs/sim_1/new/tb_axi_writer.sv:150]
+WARNING: [VRFC 10-2861] module 'axi_writer' does not have a parameter named AXI_MAX_BURST_SIZE [C:/Users/Kostya/Desktop/fpga_test/fpga_test/test_project/test_project.srcs/sim_1/new/tb_axi_writer.sv:200]
 Completed static elaboration
 INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

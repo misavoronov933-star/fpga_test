@@ -24,7 +24,6 @@ module axi_writer
 #(
     parameter AXI_MAX_BURST_SIZE = 128
 )
-
 (
     //SYSTEM
     input  logic clk,
@@ -51,6 +50,9 @@ module axi_writer
     input  logic [1:0] m_axi_bresp,
     input  logic m_axi_bvalid,
     output logic m_axi_bready
+   
+   //debug
+    ,input logic [27:0] addr_debug
 );
 
 localparam IDLE = 0, CALC_AW = 1,  SEND_AW = 2, SEND_W = 3, WAIT_B = 4, UPDATE_AW = 5, CHECK = 6;
@@ -75,7 +77,9 @@ localparam logic [12:0] axi_4k_bound = 13'h1000;
     logic [7:0] comp_numb_of_bytes;
     logic [7:0] comp_a;
     logic [7:0] comp_b;
-    assign busy = state != IDLE;  // Второй вариант реализации busy сигнала (удали если не нужен будет)
+    
+    
+    assign busy = state != IDLE; 
     
     assign m_axi_wlast = transf_byte_cnt == current_burst_size - 1;
     assign min_update = state == CALC_AW;
@@ -88,31 +92,24 @@ localparam logic [12:0] axi_4k_bound = 13'h1000;
     assign comp_a = (comp_bound <= comp_ram) ? comp_bound : comp_ram;
     assign comp_b = (comp_a <= comp_numb_of_bytes) ? comp_a : comp_numb_of_bytes;
     
-    
-//    always_ff @(posedge clk) begin
-//        if (rst) begin
-//            current_burst_size <= 0;
-//        end
-//        else begin
-//            if (min_update) begin
-//                current_burst_size <= comp_b;
-//            end
-//        end
-//    end
-    
+ 
+
+
     
     always_ff @(posedge clk) begin
         if (rst) begin
             state <= 0; 
             pattern_data_buff <= 0;
             pattern_size_buff <= 0;
-//            busy <= 1'b0;
-            current_addr <= 0;
+//            current_addr <= 0;
+            current_addr <= addr_debug; // Для проверки границы ОЗУ и циклического буфера
             number_of_bytes <= 0;
             current_burst_size <= 0;
             transf_byte_cnt <= 0;
-            axi_boundary <= axi_4k_bound;
-            ram_limit <= BUFFER_SIZE;
+//            axi_boundary <= axi_4k_bound;
+//            ram_limit <= BUFFER_SIZE;
+            axi_boundary <= axi_4k_bound - {1'b0, addr_debug[11:0]}; // Для проверки границы ОЗУ и циклического буфера
+            ram_limit <= BUFFER_SIZE - {1'b0, addr_debug[27:0]}; // Для проверки границы ОЗУ и циклического буфера
             m_axi_awaddr <= 0;
             m_axi_awid <= 0;
             m_axi_awburst <= 0;
@@ -128,13 +125,11 @@ localparam logic [12:0] axi_4k_bound = 13'h1000;
             IDLE: begin
                 if (pattern_write && !busy) begin
                     if (pattern_size == 0)  begin
-//                        busy <= 1'b0;
                         state <= 0;
                     end
                     else begin
                         pattern_data_buff <= pattern_data;
                         number_of_bytes <= pattern_size; 
-//                        busy <= 1'b1; 
                         state <= 1;
                     end
                 end
@@ -185,16 +180,18 @@ localparam logic [12:0] axi_4k_bound = 13'h1000;
             UPDATE_AW: begin
                 current_addr <= current_addr +  current_burst_size;
                 number_of_bytes <= number_of_bytes - current_burst_size;
-                axi_boundary <= axi_boundary - current_addr +  current_burst_size;
-                ram_limit <= ram_limit - current_addr +  current_burst_size;
                 state <= CHECK;
             end
             CHECK: begin
                 if (number_of_bytes == 0) begin
                     state <= 0;
+                    axi_boundary <= axi_4k_bound - {1'b0,current_addr[11:0]};
+                    ram_limit <= BUFFER_SIZE - {1'b0,current_addr[27:0]};
                 end
                 else begin
                     state <= 1;
+                    axi_boundary <= axi_4k_bound - {1'b0,current_addr[11:0]};
+                    ram_limit <= BUFFER_SIZE - {1'b0,current_addr[27:0]};
                 end
             end
             default: begin
