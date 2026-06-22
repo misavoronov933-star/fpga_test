@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_axi_writer_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../test_project.srcs/sim_1/new/tb_axi_writer.sv" \
+
+# Do not sort compile order
+nosort
