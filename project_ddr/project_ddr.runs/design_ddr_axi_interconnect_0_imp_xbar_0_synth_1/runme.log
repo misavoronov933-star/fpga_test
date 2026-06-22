@@ -1,0 +1,509 @@
+
+*** Running vivado
+    with args -log design_ddr_axi_interconnect_0_imp_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_ddr_axi_interconnect_0_imp_xbar_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Jun 23 00:55:19 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_ddr_axi_interconnect_0_imp_xbar_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 620.605 ; gain = 191.613
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_ddr_axi_interconnect_0_imp_xbar_0
+Command: synth_design -top design_ddr_axi_interconnect_0_imp_xbar_0 -part xc7k325tffg676-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24636
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1346.273 ; gain = 467.176
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ip/design_ddr_axi_interconnect_0_imp_xbar_0/synth/design_ddr_axi_interconnect_0_imp_xbar_0.v:152]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ip/design_ddr_axi_interconnect_0_imp_xbar_0/synth/design_ddr_axi_interconnect_0_imp_xbar_0.v:154]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ip/design_ddr_axi_interconnect_0_imp_xbar_0/synth/design_ddr_axi_interconnect_0_imp_xbar_0.v:232]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ip/design_ddr_axi_interconnect_0_imp_xbar_0/synth/design_ddr_axi_interconnect_0_imp_xbar_0.v:234]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ip/design_ddr_axi_interconnect_0_imp_xbar_0/synth/design_ddr_axi_interconnect_0_imp_xbar_0.v:235]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ip/design_ddr_axi_interconnect_0_imp_xbar_0/synth/design_ddr_axi_interconnect_0_imp_xbar_0.v:237]
+INFO: [Synth 8-6157] synthesizing module 'design_ddr_axi_interconnect_0_imp_xbar_0' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ip/design_ddr_axi_interconnect_0_imp_xbar_0/synth/design_ddr_axi_interconnect_0_imp_xbar_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_axi_crossbar' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_crossbar' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:2232]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_si_transactor' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_addr_decoder' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_comparator_static' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_carry_and' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_carry_and' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_comparator_static' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_comparator_static__parameterized0' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_comparator_static__parameterized0' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_comparator_static__parameterized1' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_comparator_static__parameterized1' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_addr_decoder' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_32_axic_srl_fifo' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_32_ndeep_srl' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:1129]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2024.2/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149195]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [C:/Xilinx/Vivado/2024.2/Vivado/2024.2/scripts/rt/data/unisim_comp.v:149195]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_32_ndeep_srl' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:1129]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_32_axic_srl_fifo' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_si_transactor' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_si_transactor__parameterized0' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_si_transactor__parameterized0' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_splitter' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_splitter' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_wdata_router' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4724]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-155] case statement is not full and has no default [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_wdata_router' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4724]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_si_transactor__parameterized1' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_32_axic_srl_fifo__parameterized0' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_32_axic_srl_fifo__parameterized0' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_arbiter_resp' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:1020]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_arbiter_resp' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:1020]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_si_transactor__parameterized1' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_wdata_router__parameterized0' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4724]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo__parameterized0' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-155] case statement is not full and has no default [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo__parameterized0' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_wdata_router__parameterized0' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4724]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_addr_decoder__parameterized0' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_addr_decoder__parameterized0' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_addr_decoder__parameterized1' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_addr_decoder__parameterized1' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_32_axic_srl_fifo__parameterized1' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_32_ndeep_srl__parameterized0' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:1129]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_32_ndeep_srl__parameterized0' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:1129]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_32_axic_srl_fifo__parameterized1' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_wdata_mux' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo__parameterized1' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-155] case statement is not full and has no default [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo__parameterized1' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_wdata_mux' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_33_axi_register_slice' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_33_axic_register_slice' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_33_axic_register_slice' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_33_axic_register_slice__parameterized0' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_33_axic_register_slice__parameterized0' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_33_axic_register_slice__parameterized1' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_33_axic_register_slice__parameterized1' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_33_axic_register_slice__parameterized2' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_33_axic_register_slice__parameterized2' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_33_axi_register_slice' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/3ee4/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_33_axi_register_slice' is unconnected for instance 'reg_slice_mi' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_33_axi_register_slice' has 93 connections declared, but only 92 given [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_wdata_mux__parameterized0' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo__parameterized2' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-155] case statement is not full and has no default [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo__parameterized2' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_wdata_mux__parameterized0' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_33_axi_register_slice' is unconnected for instance 'reg_slice_mi' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_33_axi_register_slice' has 93 connections declared, but only 92 given [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_33_axi_register_slice' is unconnected for instance 'reg_slice_mi' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_33_axi_register_slice' has 93 connections declared, but only 92 given [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_32_axic_srl_fifo__parameterized2' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_32_axic_srl_fifo__parameterized2' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:694]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_wdata_mux__parameterized1' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo__parameterized3' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-155] case statement is not full and has no default [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo__parameterized3' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:884]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_wdata_mux__parameterized1' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4550]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_33_axi_register_slice' is unconnected for instance 'reg_slice_mi' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_33_axi_register_slice' has 93 connections declared, but only 92 given [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3116]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_decerr_slave' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
+INFO: [Synth 8-155] case statement is not full and has no default [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3626]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_decerr_slave' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_34_addr_arbiter' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:420]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized2' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized2' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized3' [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized3' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_addr_arbiter' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:420]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_crossbar' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:2232]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_34_axi_crossbar' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6155] done synthesizing module 'design_ddr_axi_interconnect_0_imp_xbar_0' (0#1) [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ip/design_ddr_axi_interconnect_0_imp_xbar_0/synth/design_ddr_axi_interconnect_0_imp_xbar_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:747]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:786]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_issue.gen_debug_r_single_issue.debug_r_beat_cnt_i_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4078]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_issue.gen_debug_r_single_issue.debug_r_beat_cnt_i_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4078]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[0].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4338]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[1].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:4338]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:747]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:786]
+WARNING: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:1034]
+WARNING: [Synth 8-6014] Unused sequential element s_ready_i_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/65ce/hdl/axi_data_fifo_v2_1_vl_rfs.v:1034]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:2991]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:2991]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[2].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:2991]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[3].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ipshared/a7e3/hdl/axi_crossbar_v2_1_vl_rfs.v:2991]
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_33_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_33_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_33_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_33_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_33_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_34_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_34_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_34_si_transactor__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_34_si_transactor__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_34_si_transactor__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_34_si_transactor__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_34_si_transactor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_34_si_transactor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[2] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[1] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWID[0] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[5] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[4] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[3] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[2] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[1] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[0] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[5] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[4] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[3] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[2] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[1] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARID[0] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[63] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[62] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[61] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[60] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[59] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[58] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[57] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[56] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[55] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[54] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[53] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[52] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[51] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[50] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[49] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[48] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[47] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[46] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[45] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[44] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[43] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[42] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[41] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[40] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[39] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[38] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[37] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[36] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[35] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[34] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[33] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARADDR[32] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[15] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[14] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[13] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[12] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[11] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[10] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[9] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLEN[8] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARSIZE[5] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARSIZE[4] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARSIZE[3] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARBURST[3] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARBURST[2] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLOCK[3] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARLOCK[2] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARCACHE[7] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARCACHE[6] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARCACHE[5] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARCACHE[4] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[5] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[4] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[3] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARQOS[7] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARQOS[6] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARQOS[5] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARQOS[4] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARUSER[1] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARVALID[1] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_RREADY[1] in module axi_crossbar_v2_1_34_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[2] in module axi_crossbar_v2_1_34_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[1] in module axi_crossbar_v2_1_34_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_crossbar_v2_1_34_axi_crossbar is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1605.188 ; gain = 726.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1605.188 ; gain = 726.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1605.188 ; gain = 726.090
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 1605.188 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ip/design_ddr_axi_interconnect_0_imp_xbar_0/design_ddr_axi_interconnect_0_imp_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [f:/Vivado/Projects/project_ddr/project_ddr.gen/sources_1/bd/design_ddr/ip/design_ddr_axi_interconnect_0_imp_xbar_0/design_ddr_axi_interconnect_0_imp_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [F:/Vivado/Projects/project_ddr/project_ddr.runs/design_ddr_axi_interconnect_0_imp_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/Vivado/Projects/project_ddr/project_ddr.runs/design_ddr_axi_interconnect_0_imp_xbar_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1605.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1605.188 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1605.188 ; gain = 726.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1605.188 ; gain = 726.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  F:/Vivado/Projects/project_ddr/project_ddr.runs/design_ddr_axi_interconnect_0_imp_xbar_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1605.188 ; gain = 726.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.write_cs_reg' in module 'axi_crossbar_v2_1_34_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                              100 |                               10
+                     ONE |                              010 |                               11
+                     TWO |                              001 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                              100 |                               10
+                     ONE |                              010 |                               11
+                     TWO |                              001 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                              100 |                               10
+                     ONE |                              010 |                               11
+                     TWO |                              001 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_32_axic_reg_srl_fifo__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.write_cs_reg' using encoding 'one-hot' in module 'axi_crossbar_v2_1_34_decerr_slave'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1605.188 ; gain = 726.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 26    
+	   2 Input    1 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               66 Bit    Registers := 2     
+	               38 Bit    Registers := 8     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 34    
+	                1 Bit    Registers := 57    
++---Muxes : 
+	   2 Input   38 Bit        Muxes := 8     
+	   2 Input   32 Bit        Muxes := 8     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 7     
+	   2 Input    3 Bit        Muxes := 24    
+	   3 Input    3 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 36    
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 86    
+	   3 Input    1 Bit        Muxes := 26    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1605.188 ; gain = 726.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 1662.020 ; gain = 782.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:43 . Memory (MB): peak = 1771.090 ; gain = 891.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:43 . Memory (MB): peak = 1781.047 ; gain = 901.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1937.457 ; gain = 1058.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1937.457 ; gain = 1058.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1937.457 ; gain = 1058.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1937.457 ; gain = 1058.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1937.457 ; gain = 1058.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1937.457 ; gain = 1058.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |LUT1    |     9|
+|2     |LUT2    |    41|
+|3     |LUT3    |   327|
+|4     |LUT4    |    73|
+|5     |LUT5    |   105|
+|6     |LUT6    |   150|
+|7     |SRLC32E |    10|
+|8     |FDRE    |   494|
+|9     |FDSE    |    28|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:47 . Memory (MB): peak = 1937.457 ; gain = 1058.359
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 180 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:44 . Memory (MB): peak = 1937.457 ; gain = 1058.359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 1937.457 ; gain = 1058.359
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1937.457 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1954.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ba02cf00
+INFO: [Common 17-83] Releasing license: Synthesis
+121 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:01:03 . Memory (MB): peak = 1954.359 ; gain = 1314.449
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1954.359 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/Vivado/Projects/project_ddr/project_ddr.runs/design_ddr_axi_interconnect_0_imp_xbar_0_synth_1/design_ddr_axi_interconnect_0_imp_xbar_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_ddr_axi_interconnect_0_imp_xbar_0, cache-ID = 5d01c7cd0ba3de6e
+INFO: [Coretcl 2-1174] Renamed 46 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1954.359 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/Vivado/Projects/project_ddr/project_ddr.runs/design_ddr_axi_interconnect_0_imp_xbar_0_synth_1/design_ddr_axi_interconnect_0_imp_xbar_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_ddr_axi_interconnect_0_imp_xbar_0_utilization_synth.rpt -pb design_ddr_axi_interconnect_0_imp_xbar_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 23 00:56:44 2026...

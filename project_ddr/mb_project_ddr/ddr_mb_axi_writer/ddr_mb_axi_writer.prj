@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="ddr_mb_axi_writer" location="F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer" platform="F:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/design_ddr_wrapper.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="ddr_mb_axi_writer_system" sysConfig="design_ddr_wrapper" runtime="cpp" cpu="standalone_microblaze_core_0_microblaze_0" cpuInstance="microblaze_core_0_microblaze_0" os="standalone" mssSignature="b33b3a05cff026a675ade53e989e6d87">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1855118746">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1745142442" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
