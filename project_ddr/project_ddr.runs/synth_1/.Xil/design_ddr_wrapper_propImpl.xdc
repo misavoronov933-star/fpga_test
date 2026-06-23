@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:F:/Vivado/Projects/project_ddr/project_ddr.srcs/constrs_1/imports/new/cnt.xdc rfile:../../../project_ddr.srcs/constrs_1/imports/new/cnt.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AA2 [get_ports led]
+set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN K21 [get_ports uart_rxd]
+set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN L23 [get_ports uart_txd]

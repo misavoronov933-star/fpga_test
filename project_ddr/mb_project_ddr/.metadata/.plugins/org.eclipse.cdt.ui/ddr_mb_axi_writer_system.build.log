@@ -1,0 +1,6 @@
+01:20:11 **** Build of configuration Debug for project ddr_mb_axi_writer_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+01:20:11 Build Finished (took 95ms)
+
