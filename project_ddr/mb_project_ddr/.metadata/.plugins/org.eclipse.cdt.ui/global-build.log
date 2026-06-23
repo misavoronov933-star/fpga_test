@@ -1,0 +1,28 @@
+Nothing to build in platform 'design_ddr_wrapper'
+
+01:20:09 **** Build of configuration Debug for project ddr_mb_axi_writer ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IF:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/sw/design_ddr_wrapper/standalone_microblaze_core_0_microblaze_0/bspinclude/include -mlittle-endian -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IF:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/sw/design_ddr_wrapper/standalone_microblaze_core_0_microblaze_0/bspinclude/include -mlittle-endian -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ddr_mb_axi_writer.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LF:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/sw/design_ddr_wrapper/standalone_microblaze_core_0_microblaze_0/bsplib/lib -mlittle-endian -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "ddr_mb_axi_writer.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ddr_mb_axi_writer.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ddr_mb_axi_writer.elf  |tee "ddr_mb_axi_writer.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2121	     88	   3431	   5640	   1608	ddr_mb_axi_writer.elf
+'Finished building: ddr_mb_axi_writer.elf.size'
+' '
+01:20:11 **** Build of configuration Debug for project ddr_mb_axi_writer_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

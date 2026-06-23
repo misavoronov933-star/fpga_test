@@ -1,0 +1,202 @@
+00:59:08 DEBUG : Logs will be stored at 'F:/Vivado/Projects/project_ddr/mb_project_ddr/IDE.log'.
+00:59:11 INFO  : Launching XSCT server: xsct.bat -n  -interactive F:\Vivado\Projects\project_ddr\mb_project_ddr\temp_xsdb_launch_script.tcl
+00:59:11 INFO  : Registering command handlers for Vitis TCF services
+00:59:12 INFO  : Platform repository initialization has completed.
+00:59:13 INFO  : XSCT server has started successfully.
+00:59:13 INFO  : Successfully done setting XSCT server connection channel  
+00:59:13 INFO  : plnx-install-location is set to ''
+00:59:13 INFO  : Successfully done query RDI_DATADIR 
+00:59:13 INFO  : Successfully done setting workspace for the tool. 
+01:10:43 INFO  : Result from executing command 'getProjects': design_ddr_wrapper
+01:10:43 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_vck190_base_202420_1/xilinx_vck190_base_202420_1.xpfm;xilinx_vck190_base_dfx_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_vck190_base_dfx_202420_1/xilinx_vck190_base_dfx_202420_1.xpfm;xilinx_vek280_base_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_vek280_base_202420_1/xilinx_vek280_base_202420_1.xpfm;xilinx_vmk180_base_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_vmk180_base_202420_1/xilinx_vmk180_base_202420_1.xpfm;xilinx_zcu102_base_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_zcu102_base_202420_1/xilinx_zcu102_base_202420_1.xpfm;xilinx_zcu102_base_dfx_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_zcu102_base_dfx_202420_1/xilinx_zcu102_base_dfx_202420_1.xpfm;xilinx_zcu104_base_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_zcu104_base_202420_1/xilinx_zcu104_base_202420_1.xpfm
+01:10:43 WARN  : An unexpected exception occurred in the module 'platform project logging'
+01:10:44 INFO  : Platform 'design_ddr_wrapper' is added to custom repositories.
+01:10:51 INFO  : Platform 'design_ddr_wrapper' is added to custom repositories.
+01:14:36 INFO  : Result from executing command 'getProjects': design_ddr_wrapper
+01:14:36 INFO  : Result from executing command 'getPlatforms': design_ddr_wrapper|F:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/design_ddr_wrapper.xpfm;xilinx_vck190_base_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_vck190_base_202420_1/xilinx_vck190_base_202420_1.xpfm;xilinx_vck190_base_dfx_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_vck190_base_dfx_202420_1/xilinx_vck190_base_dfx_202420_1.xpfm;xilinx_vek280_base_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_vek280_base_202420_1/xilinx_vek280_base_202420_1.xpfm;xilinx_vmk180_base_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_vmk180_base_202420_1/xilinx_vmk180_base_202420_1.xpfm;xilinx_zcu102_base_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_zcu102_base_202420_1/xilinx_zcu102_base_202420_1.xpfm;xilinx_zcu102_base_dfx_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_zcu102_base_dfx_202420_1/xilinx_zcu102_base_dfx_202420_1.xpfm;xilinx_zcu104_base_202420_1|C:/Xilinx/Vivado/2024.2/Vitis/2024.2/base_platforms/xilinx_zcu104_base_202420_1/xilinx_zcu104_base_202420_1.xpfm
+01:20:09 INFO  : Checking for BSP changes to sync application flags for project 'ddr_mb_axi_writer'...
+01:20:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:20:55 INFO  : Jtag cable 'Platform Cable USB II 136202079204c2' is selected.
+01:20:55 INFO  : 'jtag frequency' command is executed.
+01:20:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 136202079204c2" && level==0 && jtag_device_ctx=="jsn-DLC10-136202079204c2-43651093-0"}' command is executed.
+01:21:28 INFO  : Device configured successfully with "F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/_ide/bitstream/design_ddr_wrapper.bit"
+01:21:28 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:21:28 INFO  : Hardware design and registers information is loaded from 'F:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/hw/design_ddr_wrapper.xsa'.
+01:21:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:21:28 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:21:28 INFO  : System reset is completed.
+01:21:31 INFO  : 'after 3000' command is executed.
+01:21:31 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:21:31 INFO  : The application 'F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/Debug/ddr_mb_axi_writer.elf' is downloaded to processor 'microblaze_core_0_microblaze_0'.
+01:21:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 136202079204c2" && level==0 && jtag_device_ctx=="jsn-DLC10-136202079204c2-43651093-0"}
+fpga -file F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/_ide/bitstream/design_ddr_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw F:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/hw/design_ddr_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/Debug/ddr_mb_axi_writer.elf
+----------------End of Script----------------
+
+01:21:31 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:21:31 INFO  : 'con' command is executed.
+01:21:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+01:21:31 INFO  : Launch script is exported to file 'F:\Vivado\Projects\project_ddr\mb_project_ddr\ddr_mb_axi_writer_system\_ide\scripts\debugger_ddr_mb_axi_writer-default.tcl'
+01:31:56 INFO  : Disconnected from the channel tcfchan#2.
+01:31:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:31:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:31:56 INFO  : Jtag cable 'Platform Cable USB II 136202079204c2' is selected.
+01:31:56 INFO  : Jtag cable 'Platform Cable USB II 136202079204c2' is selected.
+01:31:56 INFO  : 'jtag frequency' command is executed.
+01:31:56 INFO  : 'jtag frequency' command is executed.
+01:31:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 136202079204c2" && level==0 && jtag_device_ctx=="jsn-DLC10-136202079204c2-43651093-0"}' command is executed.
+01:32:29 INFO  : Device configured successfully with "F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/_ide/bitstream/design_ddr_wrapper.bit"
+01:32:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 136202079204c2" && level==0 && jtag_device_ctx=="jsn-DLC10-136202079204c2-43651093-0"}' command is executed.
+01:33:01 INFO  : Device configured successfully with "F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/_ide/bitstream/design_ddr_wrapper.bit"
+01:33:01 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:33:01 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:33:01 INFO  : Hardware design and registers information is loaded from 'F:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/hw/design_ddr_wrapper.xsa'.
+01:33:01 INFO  : Hardware design and registers information is loaded from 'F:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/hw/design_ddr_wrapper.xsa'.
+01:33:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:33:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:33:01 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:33:01 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:33:01 INFO  : System reset is completed.
+01:33:01 INFO  : System reset is completed.
+01:33:04 INFO  : 'after 3000' command is executed.
+01:33:08 INFO  : 'after 3000' command is executed.
+01:33:08 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:33:08 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:33:08 INFO  : The application 'F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/Debug/ddr_mb_axi_writer.elf' is downloaded to processor 'microblaze_core_0_microblaze_0'.
+01:33:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 136202079204c2" && level==0 && jtag_device_ctx=="jsn-DLC10-136202079204c2-43651093-0"}
+fpga -file F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/_ide/bitstream/design_ddr_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw F:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/hw/design_ddr_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/Debug/ddr_mb_axi_writer.elf
+----------------End of Script----------------
+
+01:33:08 INFO  : The application 'F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/Debug/ddr_mb_axi_writer.elf' is downloaded to processor 'microblaze_core_0_microblaze_0'.
+01:33:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 136202079204c2" && level==0 && jtag_device_ctx=="jsn-DLC10-136202079204c2-43651093-0"}
+fpga -file F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/_ide/bitstream/design_ddr_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw F:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/hw/design_ddr_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/Debug/ddr_mb_axi_writer.elf
+----------------End of Script----------------
+
+01:33:08 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:33:08 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:33:08 INFO  : 'con' command is executed.
+01:33:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+01:33:08 INFO  : Launch script is exported to file 'F:\Vivado\Projects\project_ddr\mb_project_ddr\ddr_mb_axi_writer_system\_ide\scripts\debugger_ddr_mb_axi_writer-default.tcl'
+01:33:08 ERROR : Already running
+01:55:57 INFO  : Disconnected from the channel tcfchan#3.
+01:55:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:55:58 INFO  : Jtag cable 'Platform Cable USB II 136202079204c2' is selected.
+01:55:58 INFO  : 'jtag frequency' command is executed.
+01:55:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 136202079204c2" && level==0 && jtag_device_ctx=="jsn-DLC10-136202079204c2-43651093-0"}' command is executed.
+01:56:30 INFO  : Device configured successfully with "F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/_ide/bitstream/design_ddr_wrapper.bit"
+01:56:30 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:56:30 INFO  : Hardware design and registers information is loaded from 'F:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/hw/design_ddr_wrapper.xsa'.
+01:56:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+01:56:30 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:56:30 INFO  : System reset is completed.
+01:56:33 INFO  : 'after 3000' command is executed.
+01:56:33 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:56:33 INFO  : The application 'F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/Debug/ddr_mb_axi_writer.elf' is downloaded to processor 'microblaze_core_0_microblaze_0'.
+01:56:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 136202079204c2" && level==0 && jtag_device_ctx=="jsn-DLC10-136202079204c2-43651093-0"}
+fpga -file F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/_ide/bitstream/design_ddr_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw F:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/hw/design_ddr_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/Debug/ddr_mb_axi_writer.elf
+----------------End of Script----------------
+
+01:56:34 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+01:56:34 INFO  : 'con' command is executed.
+01:56:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+01:56:34 INFO  : Launch script is exported to file 'F:\Vivado\Projects\project_ddr\mb_project_ddr\ddr_mb_axi_writer_system\_ide\scripts\debugger_ddr_mb_axi_writer-default.tcl'
+02:16:37 INFO  : Disconnected from the channel tcfchan#4.
+02:16:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:16:38 INFO  : Jtag cable 'Platform Cable USB II 136202079204c2' is selected.
+02:16:38 INFO  : 'jtag frequency' command is executed.
+02:16:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 136202079204c2" && level==0 && jtag_device_ctx=="jsn-DLC10-136202079204c2-43651093-0"}' command is executed.
+02:16:40 ERROR : 'fpga -file F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/_ide/bitstream/design_ddr_wrapper.bit' is cancelled.
+02:16:40 ERROR : Exception occured while running Program Device.
+java.lang.RuntimeException: 'fpga -file F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/_ide/bitstream/design_ddr_wrapper.bit' is cancelled.
+02:16:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+02:16:40 ERROR : 'fpga -file F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/_ide/bitstream/design_ddr_wrapper.bit' is cancelled.
+02:17:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:17:48 INFO  : Jtag cable 'Platform Cable USB II 136202079204c2' is selected.
+02:17:48 INFO  : 'jtag frequency' command is executed.
+02:17:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 136202079204c2" && level==0 && jtag_device_ctx=="jsn-DLC10-136202079204c2-43651093-0"}' command is executed.
+02:18:20 INFO  : Device configured successfully with "F:/Vivado/Projects/project_ddr/project_ddr.runs/impl_1/design_ddr_wrapper.bit"
+02:18:20 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+02:18:20 INFO  : Hardware design and registers information is loaded from 'F:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/hw/design_ddr_wrapper.xsa'.
+02:18:20 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+02:18:20 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+02:18:20 INFO  : System reset is completed.
+02:18:23 INFO  : 'after 3000' command is executed.
+02:18:23 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+02:18:23 INFO  : The application 'F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/Debug/ddr_mb_axi_writer.elf' is downloaded to processor 'microblaze_core_0_microblaze_0'.
+02:18:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 136202079204c2" && level==0 && jtag_device_ctx=="jsn-DLC10-136202079204c2-43651093-0"}
+fpga -file F:/Vivado/Projects/project_ddr/project_ddr.runs/impl_1/design_ddr_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw F:/Vivado/Projects/project_ddr/mb_project_ddr/design_ddr_wrapper/export/design_ddr_wrapper/hw/design_ddr_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow F:/Vivado/Projects/project_ddr/mb_project_ddr/ddr_mb_axi_writer/Debug/ddr_mb_axi_writer.elf
+----------------End of Script----------------
+
+02:18:23 INFO  : Context for processor 'microblaze_core_0_microblaze_0' is selected.
+02:18:23 INFO  : 'con' command is executed.
+02:18:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+02:18:23 INFO  : Launch script is exported to file 'F:\Vivado\Projects\project_ddr\mb_project_ddr\ddr_mb_axi_writer_system\_ide\scripts\debugger_ddr_mb_axi_writer-default.tcl'
+02:32:26 INFO  : Disconnected from the channel tcfchan#5.

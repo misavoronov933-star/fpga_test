@@ -1,0 +1,11 @@
+microblaze_core_blk_mem_gen_0_0.v,verilog,xil_defaultlib,../../../bd/microblaze_core/ip/microblaze_core_blk_mem_gen_0_0/sim/microblaze_core_blk_mem_gen_0_0.v,
+microblaze_core_lmb_bram_if_cntlr_0_0.vhd,vhdl,xil_defaultlib,../../../bd/microblaze_core/ip/microblaze_core_lmb_bram_if_cntlr_0_0/sim/microblaze_core_lmb_bram_if_cntlr_0_0.vhd,
+microblaze_core_lmb_bram_if_cntlr_1_0.vhd,vhdl,xil_defaultlib,../../../bd/microblaze_core/ip/microblaze_core_lmb_bram_if_cntlr_1_0/sim/microblaze_core_lmb_bram_if_cntlr_1_0.vhd,
+microblaze_core_lmb_v10_0_0.vhd,vhdl,xil_defaultlib,../../../bd/microblaze_core/ip/microblaze_core_lmb_v10_0_0/sim/microblaze_core_lmb_v10_0_0.vhd,
+microblaze_core_lmb_v10_1_0.vhd,vhdl,xil_defaultlib,../../../bd/microblaze_core/ip/microblaze_core_lmb_v10_1_0/sim/microblaze_core_lmb_v10_1_0.vhd,
+microblaze_core_mdm_0_0.vhd,vhdl,xil_defaultlib,../../../bd/microblaze_core/ip/microblaze_core_mdm_0_0/sim/microblaze_core_mdm_0_0.vhd,
+microblaze_core_microblaze_0_0.vhd,vhdl,xil_defaultlib,../../../bd/microblaze_core/ip/microblaze_core_microblaze_0_0/sim/microblaze_core_microblaze_0_0.vhd,
+microblaze_core_proc_sys_reset_0_0.vhd,vhdl,xil_defaultlib,../../../bd/microblaze_core/ip/microblaze_core_proc_sys_reset_0_0/sim/microblaze_core_proc_sys_reset_0_0.vhd,
+microblaze_core_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/microblaze_core/ip/microblaze_core_xlconstant_0_0/sim/microblaze_core_xlconstant_0_0.v,
+microblaze_core.v,verilog,xil_defaultlib,../../../bd/microblaze_core/sim/microblaze_core.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
